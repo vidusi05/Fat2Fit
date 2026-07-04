@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fat2Fit Gym | Transform Your Body, Elevate Your Life</title>
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Welcome to Fat2Fit Gym! Explore our premium facilities, meet our expert personal trainers, check client reviews, and join our fitness community today.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container navbar">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">Fat</span>2Fit
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                    <li><a href="#trainers" class="nav-link">Trainers</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-cta-mobile">
+                    <a href="#contact" class="btn btn-primary">Join Now</a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary btn-nav-cta">Join Now</a>
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-container">
+            <img src="assets/background.png" alt="Fat2Fit Gym Floor" class="hero-bg-img" onerror="this.style.display='none';">
+            <div class="hero-bg-fallback"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text-wrapper">
+                <h1 class="hero-title">No Excuses. <br>Just <span class="text-gradient">Results</span>.</h1>
+                <p class="hero-subtitle">Welcome to Fat2Fit. We provide premium equipment, world-class trainers, and an inspiring community to help you achieve your ultimate fitness goals.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">Start Your Journey</a>
+                    <a href="#facilities" class="btn btn-secondary btn-large">Explore Gym</a>
+                </div>
+            </div>
+            
+            <!-- Quick Hours Banner -->
+            <div class="quick-hours-card">
+                <div class="qh-item">
+                    <div class="qh-icon"><i class="fa-regular fa-clock"></i></div>
+                    <div class="qh-info">
+                        <span class="qh-label">Weekdays</span>
+                        <span class="qh-value">5:00 AM - 10:00 PM</span>
+                    </div>
+                </div>
+                <div class="qh-divider"></div>
+                <div class="qh-item">
+                    <div class="qh-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                    <div class="qh-info">
+                        <span class="qh-label">Weekends</span>
+                        <span class="qh-value">7:00 AM - 8:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section (Refactored to horizontal slide overlay) -->
+    <section class="section-padding facilities-section" id="facilities">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tagline">OUR SPACES</span>
+                <h2 class="section-title">World-Class <span class="text-gradient">Facilities</span></h2>
+                <p class="section-desc">Take a tour of our high-end training zones designed to optimize every workout and keep you performing at your peak.</p>
+            </div>
+
+            <!-- Facilities Horizontal Slider -->
+            <div class="facilities-slider-container">
+                <div class="facilities-slider" id="facilities-slider">
+                    
+                    <!-- Slide 1: Gym Floor -->
+                    <div class="facility-slide active">
+                        <div class="slide-bg">
+                            <img src="assets/general.jpg" alt="Fat2Fit Gym Floor" class="slide-img" onerror="this.classList.add('img-error');">
+                            <div class="slide-img-fallback">
+                                <i class="fa-solid fa-dumbbell fallback-icon"></i>
+                                <span>general.jpg placeholder</span>
+                            </div>
+                        </div>
+                        <div class="slide-overlay-content">
+                            <span class="slide-badge">Main Zone</span>
+                            <h3>Main Gym Floor</h3>
+                            <p>Spacious, climate-controlled workout area featuring top-tier strength machines, plates, and dedicated stretching zones.</p>
+                            <ul class="slide-features">
+                                <li><i class="fa-solid fa-circle-check"></i> Premium Hammer Strength racks</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Full set of dumbbells up to 150 lbs</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Spacious turf functional zone</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Strength Zone -->
+                    <div class="facility-slide">
+                        <div class="slide-bg">
+                            <img src="assets/strength.jpg" alt="Fat2Fit Strength Area" class="slide-img" onerror="this.classList.add('img-error');">
+                            <div class="slide-img-fallback">
+                                <i class="fa-solid fa-dumbbell fallback-icon"></i>
+                                <span>strength.jpg placeholder</span>
+                            </div>
+                        </div>
+                        <div class="slide-overlay-content">
+                            <span class="slide-badge">Iron Room</span>
+                            <h3>Power & Olympic Lifting</h3>
+                            <p>Built specifically for powerlifters, Olympic lifters, and bodybuilders who demand heavy-duty, professional gear.</p>
+                            <ul class="slide-features">
+                                <li><i class="fa-solid fa-circle-check"></i> Olympic platforms & Eleiko bars</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Dedicated squat racks & deadlift jacks</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Chalk-friendly training space</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Cardio Suite -->
+                    <div class="facility-slide">
+                        <div class="slide-bg">
+                            <img src="assets/cardio.jpg" alt="Fat2Fit Cardio Zone" class="slide-img" onerror="this.classList.add('img-error');">
+                            <div class="slide-img-fallback">
+                                <i class="fa-solid fa-person-running fallback-icon"></i>
+                                <span>cardio.jpg placeholder</span>
+                            </div>
+                        </div>
+                        <div class="slide-overlay-content">
+                            <span class="slide-badge">Endurance</span>
+                            <h3>Cardio Zone</h3>
+                            <p>Maximize your endurance with our wide range of high-tech treadmills, stairmasters, stationary bikes, and rowers.</p>
+                            <ul class="slide-features">
+                                <li><i class="fa-solid fa-circle-check"></i> Interactive screen treadmills</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Concept2 Rowers & SkiErgs</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Live heart-rate tracking displays</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Studio -->
+                    <div class="facility-slide">
+                        <div class="slide-bg">
+                            <img src="assets/studio.jpg" alt="Fat2Fit Yoga & Spin Studio" class="slide-img" onerror="this.classList.add('img-error');">
+                            <div class="slide-img-fallback">
+                                <i class="fa-solid fa-spa fallback-icon"></i>
+                                <span>studio.jpg placeholder</span>
+                            </div>
+                        </div>
+                        <div class="slide-overlay-content">
+                            <span class="slide-badge">Mind & Body</span>
+                            <h3>Group Class Studio</h3>
+                            <p>A beautiful, soundproofed room with bamboo flooring, ambient lighting, and high-quality mats for yoga, pilates, and spin.</p>
+                            <ul class="slide-features">
+                                <li><i class="fa-solid fa-circle-check"></i> Full-length wall mirrors</li>
+                                <li><i class="fa-solid fa-circle-check"></i> High-fidelity sound system</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Yoga blocks, straps & pilates mats</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slider Indicators / Navigation Dots -->
+                <div class="facilities-dots" id="facilities-dots">
+                    <span class="f-dot active" data-index="0"></span>
+                    <span class="f-dot" data-index="1"></span>
+                    <span class="f-dot" data-index="2"></span>
+                    <span class="f-dot" data-index="3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section (Round Image Frames) -->
+    <section class="section-padding trainers-section" id="trainers">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tagline">EXPERT COACHES</span>
+                <h2 class="section-title">Meet Our <span class="text-gradient">Trainers</span></h2>
+                <p class="section-desc">Our certified personal trainers Nilu, Kevin, and Priyanka are here to guide, motivate, and design personalized programs tailored to your fitness level.</p>
+            </div>
+
+            <div class="trainers-grid">
+                <!-- Trainer 1: Nilu -->
+                <div class="trainer-card">
+                    <div class="trainer-image-wrapper round-frame">
+                        <img src="assets/trainer1.jpg" alt="Nilu - Strength Coach" class="trainer-img" onerror="this.classList.add('img-error');">
+                        <div class="trainer-img-fallback">
+                            <i class="fa-solid fa-user-ninja fallback-icon"></i>
+                            <span>trainer1.jpg</span>
+                        </div>
+                        <div class="trainer-socials">
+                            <a href="#" aria-label="Nilu Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Nilu Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info text-center">
+                        <span class="trainer-specialty">Cardio and Zumba</span>
+                        <h3>Nilu</h3>
+                        <p class="trainer-bio">With over 8 years of competitive coaching, Nilu specializes in barbell training, progressive overload, and movement mechanics.</p>
+                        <div class="trainer-certs">
+                            <span class="cert-tag">NASM-PES</span>
+                            <span class="cert-tag">BS Exercise Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 2: Kevin -->
+                <div class="trainer-card">
+                    <div class="trainer-image-wrapper round-frame">
+                        <img src="assets/trainer2.jpg" alt="Kevin - Strength & Conditioning Coach" class="trainer-img" onerror="this.classList.add('img-error');">
+                        <div class="trainer-img-fallback">
+                            <i class="fa-solid fa-user-ninja fallback-icon"></i>
+                            <span>trainer2.jpg</span>
+                        </div>
+                        <div class="trainer-socials">
+                            <a href="#" aria-label="Kevin Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Kevin Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info text-center">
+                        <span class="trainer-specialty">Strength and Conditioning</span>
+                        <h3>Kevin</h3>
+                        <p class="trainer-bio">Kevin combines yoga flow principles with mobility exercises to build sustainable flexibility, spinal alignment, and athletic balance.</p>
+                        <div class="trainer-certs">
+                            <span class="cert-tag">RYT-500 Yoga</span>
+                            <span class="cert-tag">FMS Level 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 3: Priyanka -->
+                <div class="trainer-card">
+                    <div class="trainer-image-wrapper round-frame">
+                        <img src="assets/trainer3.jpg" alt="Priyanka - Muay Thai Instructor" class="trainer-img" onerror="this.classList.add('img-error');">
+                        <div class="trainer-img-fallback">
+                            <i class="fa-solid fa-user-ninja fallback-icon"></i>
+                            <span>trainer3.jpg</span>
+                        </div>
+                        <div class="trainer-socials">
+                            <a href="#" aria-label="Priyanka Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Priyanka Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info text-center">
+                        <span class="trainer-specialty">Muay Thai</span>
+                        <h3>Priyanka</h3>
+                        <p class="trainer-bio">Priyanka designs high-energy functional conditioning routines aimed at body recomposition, endurance, and cardiovascular health.</p>
+                        <div class="trainer-certs">
+                            <span class="cert-tag">ISSA-CPT</span>
+                            <span class="cert-tag">CPR/AED Certified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section-padding reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tagline">TESTIMONIALS</span>
+                <h2 class="section-title">What Our <span class="text-gradient">Clients Say</span></h2>
+                <p class="section-desc">Real stories from real members who committed to their journey and achieved life-changing results at Fat2Fit.</p>
+            </div>
+
+            <!-- Review Slider Layout -->
+            <div class="reviews-slider-container">
+                <div class="reviews-wrapper" id="reviews-wrapper">
+                    <!-- Review 1 -->
+                    <div class="review-card active">
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"If you are looking for a Ladies gym near makola or kiribathgoda, this is the best place for you."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">SD</div>
+                            <div>
+                                <h4 class="client-name">Surath Dissanayake</h4>
+                                <span class="client-meta">Verified Member</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Fat2Fit is a fantastic place for fitness enthusiasts of all levels. The facility is spacious, well-equipped, and impeccably clean, making it a welcoming environment."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">VA</div>
+                            <div>
+                                <h4 class="client-name">Vidusini A</h4>
+                                <span class="client-meta">Verified Member</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-arrow prev" id="prev-review" aria-label="Previous Review">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                    </div>
+                    <button class="slider-arrow next" id="next-review" aria-label="Next Review">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Hours Section -->
+    <section class="section-padding contact-section" id="contact">
+        <div class="container contact-container">
+            <!-- Contact details & hours side -->
+            <div class="contact-details-wrapper">
+                <div class="section-header">
+                    <span class="section-tagline">CONNECT WITH US</span>
+                    <h2 class="section-title">Start Your <span class="text-gradient">Transformation</span></h2>
+                    <p class="section-desc">Have questions about memberships or our facilities? Reach out to us, or visit our gym for a free guest pass.</p>
+                </div>
+
+                <!-- Info blocks -->
+                <div class="info-blocks-list">
+                    <div class="info-block">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-content">
+                            <h4>Gym Location</h4>
+                            <p>36/1, Makola Road, Kiribathgoda</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Call Us</h4>
+                            <p>076 567 0060</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h4>Email Us</h4>
+                            <p>info@fat2fitgym.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Open Hours Box -->
+                <div class="hours-card">
+                    <h3><i class="fa-solid fa-clock"></i> Gym Hours</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">6:00 AM - 9:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Saturday</span>
+                            <span class="time">6:00 AM - 9:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Sunday</span>
+                            <span class="time">Closed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Form & Map Side -->
+            <div class="contact-forms-wrapper">
+                <div class="glass-form-card">
+                    <h3>Send Us A Message</h3>
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="form-name">Full Name</label>
+                            <input type="text" id="form-name" placeholder="John Doe" required>
+                            <span class="error-msg" id="name-error">Please enter your name</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email">Email Address</label>
+                            <input type="email" id="form-email" placeholder="john@example.com" required>
+                            <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <select id="form-subject" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="membership">Membership Plans</option>
+                                <option value="training">Personal Training</option>
+                                <option value="guest-pass">Free Guest Pass</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                            <span class="error-msg" id="subject-error">Please select a subject</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="4" placeholder="How can we help you?" required></textarea>
+                            <span class="error-msg" id="message-error">Please write a short message</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Custom Styled Map Mockup -->
+                <div class="map-mockup-card">
+                    <div class="map-visual">
+                        <div class="map-grid"></div>
+                        <div class="map-road road-h-1"></div>
+                        <div class="map-road road-h-2"></div>
+                        <div class="map-road road-v-1"></div>
+                        <div class="map-road road-v-2"></div>
+                        <div class="map-park"></div>
+                        <div class="map-marker-pin">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                    </div>
+                    <div class="map-bar">
+                        <div class="map-bar-info">
+                            <h5>Fat2Fit Wellness Studio</h5>
+                            <p>Makola Road, Kiribathgoda</p>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-secondary btn-small">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#hero" class="logo"><span class="logo-accent">Fat</span>2Fit</a>
+                <p class="footer-desc">Premium fitness facility dedicated to empowering individuals to conquer their health goals through cutting-edge equipment, highly trained staff, and a powerful environment.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#facilities">Our Facilities</a></li>
+                    <li><a href="#trainers">Expert Trainers</a></li>
+                    <li><a href="#reviews">Client Reviews</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Makola Road, Kiribathgoda</p>
+                <p><i class="fa-solid fa-phone"></i> 076 567 0060</p>
+                <p><i class="fa-solid fa-envelope"></i> info@fat2fitgym.com</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Fat2Fit Wellness Studio. All rights reserved. Built with passion for ultimate fitness.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification (Success feedback) -->
+    <div class="toast-notification" id="toast-notification">
+        <div class="toast-content">
+            <i class="fa-solid fa-circle-check toast-icon"></i>
+            <div class="toast-message">
+                <h4>Message Sent!</h4>
+                <p>We'll get back to you within 24 hours.</p>
+            </div>
+        </div>
+        <button class="toast-close" id="toast-close">&times;</button>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
